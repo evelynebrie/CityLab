@@ -1,13 +1,10 @@
----
-title: 'Digitales Werkzeug zur Unterstützung der Wahlbezirkszuschnitte'
-author: ""
-date: ""
-output: 
-  html_document:
-    keep_md: true
----
+# Digitales Werkzeug zur Unterstützung der Wahlbezirkszuschnitte
 
+&nbsp;
 
+### Project Presentation
+
+&nbsp;
 
 &nbsp;
 
@@ -60,7 +57,7 @@ The merged dataset resulting from the data cleaning process contains  demographi
 
 There are **123 voting districts** and **1.032 inhabited blocs** in Tempelhof-Schönefeld .
 
-**Figure 3: Voting Districts in Tempelhof-Schönefeld** <
+**Figure 3: Voting Districts in Tempelhof-Schönefeld** 
 
 ![](Map_3.png)
 
