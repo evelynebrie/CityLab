@@ -37,9 +37,8 @@ Thus, we need to focus on **relevant blocs** for which **an optimization is poss
 <center> <h5>*Figure 1: Applicability of Optimization Code for Each Bloc X* </h5> </center>
 &nbsp;
 
-<center>
-<!--html_preserve--><div id="htmlwidget-cd3992d279b2fb59c2b2" style="width:672px;height:500px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-cd3992d279b2fb59c2b2">{"x":{"diagram":"\ndigraph rmarkdown {\n\nnode [fontname = Helvetica]\nA [label = \"Bloc X Located in an \n Overpopulated Voting District\"]\nB [label = \"Yes\"]\nC [label = \"No\"]\nD [label = \"Bloc X Adjacent to at \n Least one Bloc from a \n Different Voting District\"]\nE [label = \"Yes\"]\nF [label = \"No\"]\nG [label = \"This Different \n Voting District is not \n Itself Overpopulated\"]\nH [label = \"Yes\"]\nI [label = \"No\"]\nJ [label = \"Code Outputs Voting \n District Optimization \n Suggestion for Bloc X\"]\n\nA -> B\nA -> C\nB -> D\nD -> E\nD -> F\nE -> G\nG -> H\nG -> I\nH -> J\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
+![](Flowchart.png)
+
 </center>
 
 &nbsp;
