@@ -1,5 +1,3 @@
 **Digitales Werkzeug zur Unterstützung der Wahlbezirkszuschnitte - Project Presentation**
 
-**1.** The main document...
-
-**2.** The main document...
+The "Wahlbezirke_ProjectPresentation.md" file presents the first steps taken in the redistricting project within Tempelhof-Schöneberg.
