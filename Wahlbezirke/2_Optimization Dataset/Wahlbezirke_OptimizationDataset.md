@@ -89,13 +89,12 @@ The optimization suggestions dataset contains the following information. The uni
 &nbsp;
 
 
-```r
-# Loading the dataset
-myData <- read.csv("/Users/evelynebrie/Dropbox/CityLab/Projects/Wahlbezirke/Data/optimization_options.csv")
-
-# Displaying the column names
-colnames(myData)
-```
+> ```r
+> # Loading the dataset
+> myData <- read.csv("/Users/evelynebrie/Dropbox/CityLab/Projects/Wahlbezirke/Data/optimization_options.csv")
+> # Displaying the column names
+> colnames(myData)
+> ```
 
 ```
 ##  [1] "X"                           "Block_Nummer"               
@@ -120,11 +119,11 @@ colnames(myData)
 ## [39] "Optimized_Wahlbezirk_6"
 ```
 
-```r
-# Displaying the number of overpopulated districts
-x <- table(myData$Wahlbezirk_Nummer,myData$Wahlbezirk_Uebervoelkert)
-sum((x[,2])!=0)
-```
+> ```r
+> # Displaying the number of overpopulated districts
+> x <- table(myData$Wahlbezirk_Nummer,myData$Wahlbezirk_Uebervoelkert)
+> sum((x[,2])!=0)
+> ```
 
 ```
 ## [1] 18
@@ -135,19 +134,19 @@ Note that a minority of blocs (158 out of 1,032, or approximately 15\%) are loca
 
 &nbsp;
 
-```r
-# Number of blocs located in overpopulated districts
-sum(myData$Wahlbezirk_Uebervoelkert)
-```
+> ```r
+> # Number of blocs located in overpopulated districts
+> sum(myData$Wahlbezirk_Uebervoelkert)
+> ```
 
 ```
 ## [1] 158
 ```
 
-```r
-# Percentage of blocs located in overpopulated districts
-sum(myData$Wahlbezirk_Uebervoelkert)/length(myData$Wahlbezirk_Uebervoelkert)*100
-```
+> ```r
+> # Percentage of blocs located in overpopulated districts
+> sum(myData$Wahlbezirk_Uebervoelkert)/length(myData$Wahlbezirk_Uebervoelkert)*100
+> ```
 
 ```
 ## [1] 15.31008
@@ -159,55 +158,55 @@ However, not all of these 158 blocs could possibly be switched to another voting
 
 &nbsp;
 
-```r
-# Showing how many blocs have at least one optimization suggestion (100)
-sum(!is.na(myData$Optimized_Wahlbezirk_1))
-```
+> ```r
+> # Showing how many blocs have at least one optimization suggestion (100)
+> sum(!is.na(myData$Optimized_Wahlbezirk_1))
+> ```
 
 ```
 ## [1] 100
 ```
 
-```r
-# Showing how many blocs have at least two optimization suggestions (54)
-sum(!is.na(myData$Optimized_Wahlbezirk_2))
-```
+> ```r
+> # Showing how many blocs have at least two optimization suggestions (54)
+> sum(!is.na(myData$Optimized_Wahlbezirk_2))
+> ```
 
 ```
 ## [1] 54
 ```
 
-```r
-# Showing how many blocs have at least three optimization suggestions (26)
-sum(!is.na(myData$Optimized_Wahlbezirk_3))
-```
+> ```r
+> # Showing how many blocs have at least three optimization suggestions (26)
+> sum(!is.na(myData$Optimized_Wahlbezirk_3))
+> ```
 
 ```
 ## [1] 26
 ```
 
-```r
-# Showing how many blocs have at least four optimization suggestions (5)
-sum(!is.na(myData$Optimized_Wahlbezirk_4))
-```
+> ```r
+> # Showing how many blocs have at least four optimization suggestions (5)
+> sum(!is.na(myData$Optimized_Wahlbezirk_4))
+> ```
 
 ```
 ## [1] 5
 ```
 
-```r
-# Showing how many blocs have at least five optimization suggestions (1)
-sum(!is.na(myData$Optimized_Wahlbezirk_5))
-```
+> ```r
+> # Showing how many blocs have at least five optimization suggestions (1)
+> sum(!is.na(myData$Optimized_Wahlbezirk_5))
+> ```
 
 ```
 ## [1] 1
 ```
 
-```r
-# Showing how many blocs have at least six optimization suggestions (none)
-sum(!is.na(myData$Optimized_Wahlbezirk_6))
-```
+> ```r
+> # Showing how many blocs have at least six optimization suggestions (none)
+> sum(!is.na(myData$Optimized_Wahlbezirk_6))
+> ```
 
 ```
 ## [1] 0
@@ -258,12 +257,11 @@ Since this bloc is located in an overpopulated district (Wahlbezirk_Uebervoelker
 &nbsp;
 
 
-```r
-# Identifying row number associated with bloc 068108
-idx <- which(myData$Block_Nummer=="68108")
-
-myData[idx,c(2,4,7)]
-```
+> ```r
+> # Identifying row number associated with bloc 068108
+> idx <- which(myData$Block_Nummer=="68108")
+> myData[idx,c(2,4,7)]
+> ```
 
 ```
 ##     Block_Nummer Wahlbezirk_Nummer Wahlbezirk_Uebervoelkert
@@ -278,9 +276,9 @@ This bloc is adjacent to seven other blocs (068101, 068102, 068103, 068107, 0681
 
 
 
-```r
-myData[idx,8:14]
-```
+> ```r
+> myData[idx,8:14]
+> ```
 
 ```
 ##     Block_Nachbar_1 Block_Nachbar_2 Block_Nachbar_3 Block_Nachbar_4
@@ -297,9 +295,9 @@ Each of these adjacent blocs is itself associated with a voting district (1468, 
 
 
 
-```r
-myData[idx,21:26]
-```
+> ```r
+> myData[idx,21:26]
+> ```
 
 ```
 ##     Block_Nachbar_1_Wahlbezirk Block_Nachbar_2_Wahlbezirk
@@ -317,9 +315,9 @@ Finally, we can see that the one and only optimization suggestion for this speci
 &nbsp;
 
 
-```r
-myData$Optimized_Wahlbezirk_1[idx]
-```
+> ```r
+> myData$Optimized_Wahlbezirk_1[idx]
+> ```
 
 ```
 ## [1] 1490
@@ -352,9 +350,9 @@ Two of these blocs are located in a voting district which is itself overpopulate
 &nbsp;
 
 
-```r
-myData$Optimized_Wahlbezirk_1[idx]
-```
+> ```r
+> myData$Optimized_Wahlbezirk_1[idx]
+> ```
 
 ```
 ## [1] 1490
