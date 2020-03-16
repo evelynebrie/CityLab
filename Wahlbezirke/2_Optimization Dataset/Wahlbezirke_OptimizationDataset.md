@@ -1,6 +1,10 @@
 &nbsp;
 
-### Identifying Alternative Districts for Blocs Located in Overpopulated Voting Districts
+# Digitales Werkzeug zur Unterstützung der Wahlbezirkszuschnitte
+
+&nbsp;
+
+## Identifying Alternative Districts for Blocs Located in Overpopulated Voting Districts
 
 &nbsp;
 
