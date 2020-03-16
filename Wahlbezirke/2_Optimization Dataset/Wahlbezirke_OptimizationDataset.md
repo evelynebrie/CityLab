@@ -34,12 +34,7 @@ Thus, we need to focus on **relevant blocs** for which **an optimization is poss
 
 &nbsp;
 
-<center> <h5>*Figure 1: Applicability of Optimization Code for Each Bloc X* </h5> </center>
-&nbsp;
-
 ![](Flowchart.png)
-
-</center>
 
 &nbsp;
 
