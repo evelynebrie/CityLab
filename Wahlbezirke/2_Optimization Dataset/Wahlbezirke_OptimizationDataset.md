@@ -221,10 +221,9 @@ sum(!is.na(myData$Optimized_Wahlbezirk_6))
 The area surrounding Alboinplatz in Tempelhof-Schönefeld offers a relevant example of this code's application because it encompasses two over-populated voting districts.
 
 &nbsp;
+  
+![](Alboinplatz.png)
 
-<p align="center">
-![](https://github.com/evelynebrie/CityLab/Wahlbezirke/2_Optimization Dataset/Alboinplatz.png){ width=60% }
-</p>
 
 &nbsp;
 
@@ -240,9 +239,7 @@ There are 6 districts and 39 blocs in the subset of data that was selected for t
 
 Two of these voting districts (1468 and 1498) are overpopulated. These are represented by the darker shades of blue in the following graph.
 
-<p align="center">
-![](Districts_2.png){ width=70% }
-</p>
+![](Districts_2.png)
 
 The example below consists in relocating one of the blocs located in one of these overpopulated districts within an adjacent, non-overpopulated district.
 
@@ -254,9 +251,7 @@ The example below consists in relocating one of the blocs located in one of thes
 
 Let's focus on **bloc number 068108** in **voting district 1468**. It is displayed in yellow in the figure below.
 
-<p align="center">
-![](Districts_3.png){ width=70% }
-</p>
+![](Districts_3.png)
 
 Since this bloc is located in an overpopulated district (Wahlbezirk_Uebervoelkert column is equal to 1), we want to know to which alternative voting district this bloc could be switched to in order to reduce the number of inhabitants in its initial district.  
 
@@ -342,22 +337,15 @@ The following section displays the logical steps leading to this suggestion with
 
 Let's go back to our bloc of interest, **bloc number 068108** (displayed in yellow in the figure below), located in **voting district 1468**.  The code identifies the seven blocs adjacent to this bloc regardless of their respective voting district---that is to say, all blocs whose boundaries are located 80 meters or less from bloc number 068108's boundaries. These adjacent blocs are depicted in blue in the figure below.
 
-<p align="center">
-![](Districts_4.png){width=70%}
-</p>
+![](Districts_4.png)
 
 However, some of these adjacent blocs are located within the same voting district as bloc number 068108, that is, in voting district 1468. These blocs are depicted in red in the figure below. Since they can't be used to propose a new voting district for bloc 068108, they are excluded from the following steps. Valid blocs, depicted in green, make it to the next step.
 
-
-<p align="center">
-![](Districts_5.png){width=70%}
-</p>
+![](Districts_5.png)
 
 We are left with four blocs located in two different voting districts (1498 and 1490). These are presented in blue in the figure below.
 
-<p align="center">
-![](Districts_6.png){width=70%}
-</p>
+![](Districts_6.png)
 
 Two of these blocs are located in a voting district which is itself overpopulated (voting district number 1498). These blocs are depicted in red in the figure below. We are left with two blocs from district 1490, which was the optimization suggestion for bloc number 068108 in our dataset. 
 
@@ -372,9 +360,7 @@ myData$Optimized_Wahlbezirk_1[idx]
 ## [1] 1490
 ```
 
-<p align="center">
-![](Districts_7.png){width=70%}
-</p>
+![](Districts_7.png)
 
 Thus, we could consider redrawing the borders of voting district 1490 to include bloc number 068108.
 
@@ -414,17 +400,11 @@ Here is a list of the pros and cons of this method.
 All suggested switches are displayed in tables below for reference. Here are also maps displaying bloc numbers, district numbers and overpopulated districts in Tempelhof-Schönefeld.
 
 
-<p align="center">
 ![](Map_Blocs.png)
-</p>
 
-<p align="center">
 ![](Map_Districts.png)
-</p>
 
-<p align="center">
 ![](Map_DistrictsPopulation.png)
-</p>
 
 *(Please note that voting district 1473 has exactly 2500 inhabitants, and is therefore not considered as overpopulated in the present analysis)*
 
