@@ -1,14 +1,3 @@
----
-title: 'Digitales Werkzeug zur Unterstützung der Wahlbezirkszuschnitte'
-author: ""
-date: ""
-output: 
-  html_document:
-    keep_md: true
----
-
-
-
 &nbsp;
 
 ### Identifying Alternative Districts for Blocs Located in Overpopulated Voting Districts
