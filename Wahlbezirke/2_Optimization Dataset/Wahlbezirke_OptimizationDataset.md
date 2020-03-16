@@ -242,7 +242,7 @@ The area surrounding Alboinplatz in Tempelhof-Schönefeld offers a relevant exam
 There are 6 districts and 39 blocs in the subset of data that was selected for this example.
 
 <p align="center">
-![](Districts_1.png){ width=60% }
+![](Districts_1){ width=60% }
 </p>
 
 Two of these voting districts (1468 and 1498) are overpopulated. These are represented by the darker shades of blue in the following graph.
