@@ -223,7 +223,7 @@ The area surrounding Alboinplatz in Tempelhof-Schönefeld offers a relevant exam
 &nbsp;
 
 <p align="center">
-![](Alboinplatz.png){ width=60% }
+![](https://github.com/evelynebrie/CityLab/Wahlbezirke/2_Optimization Dataset/Alboinplatz.png){ width=60% }
 </p>
 
 &nbsp;
